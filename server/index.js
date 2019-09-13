@@ -1,9 +1,12 @@
 import config from '../config';
 import express from "express";
 
-let  app = express();
+const app = express();
+const apiRouter = express.Router();
 
-app.get('/ping', (req, res) => res.send("pong"));
+app.use("/api", apiRouter);
+
+apiRouter.use('/champions', require('./routes/champions.router'));
 
 app.use(express.static('public'));
 
