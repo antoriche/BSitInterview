@@ -1,0 +1,35 @@
+{
+  "name": "bsittest",
+  "version": "1.0.0",
+  "description": "Exercise for Bsit Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx concurrently \"npm run build\" \"npm run server\"",
+    "dev": "npx concurrently \"npm run dev:build\" \"npm run dev:server\"",
+    "dev:server": "nodemon --watch server --exec \"npm run server\"",
+    "server": "npx babel-node ./server/",
+    "build": "npx webpack",
+    "dev:build": "nodemon --watch client --exec \"npm run build\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antonin Riche",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^4.1.2",
+    "eslint-plugin-react": "^7.14.3",
+    "nodemon": "^1.19.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  }
+}
