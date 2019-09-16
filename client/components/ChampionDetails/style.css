@@ -1,0 +1,43 @@
+.details{
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+@media (max-width: 800px){
+    .wrap{
+        flex-wrap: wrap;
+    }
+}
+
+.vertical{
+    flex-direction: column;
+}
+
+.screendetails{
+    max-height: calc( 100vh - 20px );
+    overflow-y: auto;
+    overflow-x: auto;
+    margin: 0px;
+    padding: 10px;
+}
+.screendetails *{
+    padding: 0px;
+}
+
+.scrollable{
+    overflow: auto;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.stats{
+    border-collapse:collapse;
+}
+.stats th, .stats td{
+    border: 1px white solid;
+}
+.stats *{
+    padding: 5px;
+}

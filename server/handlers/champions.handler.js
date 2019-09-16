@@ -5,7 +5,8 @@ export const getAll = (req, res) => {
         id: elt.id,
         name: elt.name,
         key: elt.key,
-        title: elt.title
+        title: elt.title,
+        icon: elt.icon
     }));
     res.send(list);
 };

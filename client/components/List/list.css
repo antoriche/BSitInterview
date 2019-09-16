@@ -1,0 +1,29 @@
+.list{
+    max-height: 100vh;
+    overflow-y: auto;
+    border-right: white 1px solid;
+    min-width: fit-content;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    border: none;
+    outline: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #AAA; 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #999
+}
